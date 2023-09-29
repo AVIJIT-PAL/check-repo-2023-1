@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Webpage</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background: url('background-image.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+
+        #canvas-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        #header {
+            text-align: center;
+            padding: 20px;
+            color: #fff;
+        }
+
+        #canvas {
+            width: 80%;
+            height: 60vh; /* Adjust the height as needed */
+            border: 2px solid #fff;
+            margin: 20px 0;
+        }
+
+        #buttons {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="canvas-container">
+        <div id="header">
+            <h1>Your Webpage Heading</h1>
+        </div>
+        <canvas id="canvas"></canvas>
+        <div id="buttons">
+            <button onclick="handleButtonClick(1)">Button 1</button>
+            <button onclick="handleButtonClick(2)">Button 2</button>
+            <button onclick="handleButtonClick(3)">Button 3</button>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript code for handling button clicks or other interactions
+        function handleButtonClick(buttonNumber) {
+            // Add your logic here
+            alert('Button ' + buttonNumber + ' clicked!');
+        }
+    </script>
+</body>
+</html>
